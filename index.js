@@ -76,4 +76,6 @@ async function agent(userInput) {
     console.log(response);
 }
 
+await new Promise(resolve => setTimeout(resolve, 1000)); // 1-second delay
+
 console.log(agent("Where am I located right now?"))
